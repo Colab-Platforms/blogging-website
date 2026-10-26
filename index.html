@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inkwell — A Modern Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Georgia', 'Cambria', 'serif'],
+            },
+            colors: {
+              ink: {
+                50: '#f8f7f4',
+                100: '#f0ede6',
+                200: '#ddd8cc',
+                300: '#c4bba8',
+                400: '#a89880',
+                500: '#8f7a62',
+                600: '#7a6450',
+                700: '#655242',
+                800: '#544439',
+                900: '#473b32',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { font-family: Georgia, Cambria, serif; }
+      .prose-content p { margin-bottom: 1.25rem; line-height: 1.8; }
+      .prose-content h2 { font-size: 1.5rem; font-weight: 700; margin: 2rem 0 1rem; }
+      .prose-content h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.75rem; }
+      .line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+      .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+  </head>
+  <body class="bg-ink-50 text-gray-800">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
