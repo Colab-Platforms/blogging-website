@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #ddd8cc;
+  color: #473b32;
+}
+
+textarea, input {
+  font-family: inherit;
+}
